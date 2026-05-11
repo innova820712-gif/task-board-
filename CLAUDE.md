@@ -22,6 +22,8 @@
 - **状態管理**: React `useState` / `useEffect` のみ(外部ストアなし)
 - **永続化**: ブラウザ `localStorage`(キーは `task-board:tasks`)
 - **スタイル**: プレーン CSS(CSS Modules / CSS-in-JS は未使用)
+- **PWA**: `vite-plugin-pwa`(Workbox `generateSW` / `autoUpdate`)。manifest と Service Worker は `vite build` 時に自動生成
+- **アイコン生成**: `sharp` で `scripts/generate-icons.mjs` から PNG を出力(再生成は `node scripts/generate-icons.mjs`)
 - **デプロイ**: `gh-pages` パッケージ
 - **テスト**: 未導入
 
